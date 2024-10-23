@@ -1,5 +1,14 @@
-@import url(https://db.onlinewebfonts.com/c/3404d160e7e6e9b9be25ce76d2629769?family=TheMixSemiBold-Plain);
-@import url(https://db.onlinewebfonts.com/c/683c4a9c6b0288b53c85de0098d4c568?family=TheMix+Bold+Plain);
+@font-face {
+    font-family: 'TheMixSemiBold';
+    src: url('https://db.onlinewebfonts.com/c/3404d160e7e6e9b9be25ce76d2629769?family=TheMixSemiBold-Plain') format('woff2'),
+         url('https://db.onlinewebfonts.com/c/alternative-url.woff') format('woff'); /* Fallback */
+}
+
+@font-face {
+    font-family: 'TheMixBold';
+    src: url('https://db.onlinewebfonts.com/c/683c4a9c6b0288b53c85de0098d4c568?family=TheMix+Bold+Plain') format('woff2'),
+         url('https://db.onlinewebfonts.com/c/alternative-url.woff') format('woff'); /* Fallback */
+}
 
 
 * {
@@ -7,6 +16,18 @@
     box-sizing: border-box; 
     margin: 0; 
     padding: 0; 
+    width: 100%;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url('../images/slide3.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 600px; 
+    color: white; 
+    
 }
 
 /* Logo */
@@ -15,23 +36,14 @@
 }
 
 .logo a {
-    text-decoration: none; /* Remove underline from logo link */
+    text-decoration: none; 
 }
 
 .logo-image {
     width: 120px; 
     height: 100px; 
 }
-.container{
-    background-color: rgba(255, 255, 255, 0);
-    background-image: url('../images/slide3.jpg');
-    background-size: cover; /* Ensures the image covers the entire element */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    height: 600px; /* Set a height for the element */
-    color: white; /* Text color for contrast */
-    
-}
+
 /* Navbar */
 .navbar {
     display: flex; 
@@ -66,16 +78,15 @@
     padding: 10px 20px; 
     color: white;
     font-family: "TheMixSemiBold-Plain",sans-serif; 
-    font-size: 0.60rem; 
+    font-size: 0.8rem; 
     font-style: bold;
-    line-height: 0.9; 
     display: inline-block; 
     margin: 0px;
 }
 
 /* Dropdown Styles */
 .header-dropdown {
-    font-size: 0.85rem; 
+    font-size: 0.8rem; 
     text-transform: uppercase; 
 }
 
@@ -107,10 +118,10 @@
 /* Button Styles */
 .header-button {
     background-color: #0078BE; 
-    border-radius: 30px; 
+    border-radius: 10px; 
     font-family: 'TheMixSemiBold-Plain',sans-serif; 
-    padding: 10px 10px; 
-    font-size: 0.6rem; 
+    padding: 12px 12px; 
+    font-size: 0.8rem; 
     cursor: pointer; 
     border: none; 
     color: white;
@@ -130,6 +141,11 @@
     display: flex; 
     justify-content: center;
     align-items: center; 
+    width:100;
+}
+
+.section-content{
+    width:100%;
 }
 
 .below-banner {
@@ -160,6 +176,7 @@
     background-color: white;
     border-radius: 5px;
     margin: 0 10px;
+    width:100%;
 }
 
 .below-banner-flex-container img {
@@ -204,7 +221,7 @@
     align-items: flex-start; 
 }
 
-.community-flex-container > div {
+.community-cards {
     flex: 1; 
     margin: 0 10px; 
     background-color: rgb(255, 244, 244); 
@@ -251,7 +268,8 @@
 }
 
 .c-img{
-    background-color: transparent;
+    background-color: white;
+    float:left;
 }
 
 .know.more {
@@ -271,6 +289,11 @@
 section {
     text-align: center; 
     padding: 20px; 
+}
+
+.app-container{
+    margin:5px;
+    padding:5px;
 }
 
 .apps {
@@ -295,7 +318,6 @@ section {
 .hub {
     display: flex; 
     justify-content: center; 
-    flex-wrap: wrap; 
 }
 
 .hub-img{
@@ -349,6 +371,16 @@ section {
     height: auto; 
     display: block; 
     margin: 0 auto; 
+}
+
+.trend-title{
+    font-weight:bold;
+    color:black;
+}
+
+.trend-desc{
+    color: #999898;
+    font-size: small;
 }
 
 .under-wrap {
